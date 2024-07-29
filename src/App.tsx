@@ -1,16 +1,17 @@
 import React from 'react';
 // import logo from './logo.svg';
-import Header from './components/header';
+import Header from './components/header/header';
 import Content from './components/content';
 import './App.css';
 
 
 function App() {
   return (
-    <div className="min-h-screen flex justify-center p-5 items-center">
+    <main className="min-h-screen flex justify-center p-5 items-center">
       <Header />
       <Content />
-    </div>
+    </main>
+    
   );
 }
 

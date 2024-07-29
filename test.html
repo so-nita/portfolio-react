@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font: inherit;
+        }
+        body {
+            color: #1f3049;
+            background-color: black;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .blob {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 250px;
+            height: 250px;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            overflow: hidden;
+            filter: blur(170px);
+            &:before {
+                content: "";
+                position: absolute;
+                top: -50%;
+                left: -50%;
+                width: 200%;
+                height: 200%;
+                background: linear-gradient(to right,#fff,cyan);
+                transform: rotate(0deg);
+                animation: rotate 2s infinite linear;
+                z-index: -10;
+            }
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg) scale(1);  
+            }
+            50% {
+                transform: rotate(180deg) scale(1.5);  
+            }
+            100% {
+                transform: rotate(360deg) scale(1); 
+            }
+        }
+        .light-shadow {
+            width: min(100% - 2rem, 60rem);
+            margin-inline: auto;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="blob" id="blob1"></div>
+        <div class="light-shadow"></div>
+    </div>
+</body>
+
+<script>
+    const blob1 = document.getElementById("blob1");
+    let mouseX = 0;
+    let mouseY = 0;
+
+    document.addEventListener("mousemove", function (e) {
+        mouseX = e.pageX;
+        mouseY = e.pageY;
+    });
+
+    setInterval(() => {
+        blob1.animate({
+            left: `${mouseX}px`,
+            top: `${mouseY}px`
+        },
+        {
+            duration: 2000,
+            fill: "forwards"
+            }
+        );
+    }, 25);
+</script>
