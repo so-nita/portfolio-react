@@ -10,7 +10,7 @@ const NavMobile = () => {
     useClickAway(ref, () => setOpen(false));
 
     return(
-        <div ref={ref} className="lg:hidden ">
+        <div ref={ref} className="lg:hidden">
             <Hamburger toggled={isOpen} size={20} toggle={setOpen}/>
             <AnimatePresence>
                 { isOpen && (

@@ -1,3 +1,14 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling on body */
+}
+main {
+  height: 100%;
+  overflow-y: auto; /* Enable vertical scrolling on main content */
+}
+
 .App {
   text-align: center;
 }
@@ -13,7 +24,7 @@
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,7 +33,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
