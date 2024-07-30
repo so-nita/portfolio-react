@@ -1,5 +1,5 @@
 .blob {
-    position: absolute;
+    position: fixed; /* Changed from absolute to fixed */
     top: 50%;
     left: 50%;
     width: 250px;
@@ -8,27 +8,20 @@
     border-radius: 50%;
     overflow: hidden;
     filter: blur(170px);
-    /* &:before {
-        content: "";
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        width: 200%;
-        height: 200%;
-        background: linear-gradient(to right,#fff,cyan);
-        transform: rotate(0deg);
-        animation: rotate 2s infinite linear;
-        z-index: -10;
-    } */
+    pointer-events: none; /* Prevent the blob from intercepting mouse events */
+    z-index: -1; /* Ensure the blob is behind other elements */
+    background-color: #111F41 !important;
 }
 .blob:before {
     content: "";
     position: absolute;
     top: -50%;
     left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(to right, #fff, cyan);
+    width: 130%;
+    height: 130%;
+    background-color: #111F41;
+    /* background: linear-gradient(to right, #fff, cyan); */
+    background: linear-gradient(to right,#3c87f7, #3c87f7);
     transform: rotate(0deg);
     animation: rotate 2s infinite linear;
     z-index: -10;

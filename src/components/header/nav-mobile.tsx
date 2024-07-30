@@ -20,7 +20,7 @@ const NavMobile = () => {
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.2 }}
                         //className="fixed left-0 shadow-4xl right-0 top-[3.5rem] p-5 pt-0 [#0B192FB3] border-b"
-                        className="fixed left-0 right-0 top-[3.5rem] p-5 pt-0 bg-custom-primary bg-opacity-100 border-b shadow-custom-inset h-full"
+                        className="fixed left-0 right-0 top-[3.5rem] p-5 pt-0 bg-custom-primary bg-opacity-100 h-full mt-4"
                     >
                         <ul className="grid gap-2">
                         {routes.map((route, idx) => {
