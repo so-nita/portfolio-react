@@ -8,7 +8,7 @@ const Header = () => {
     <nav className="container flex items-center justify-between py-1 lg:py-5">
       {/* <span className="text-lg pl-2">⚡️</span> */}
       {/* <span className="text-lg pl-2" >🌟</span> */}
-      <span className="text-lg pl-2" ><Logo /></span>
+      <span className="text-lg pl-4" ><Logo /></span>
       <NavMobile />
       <NavDesktop />
     </nav>

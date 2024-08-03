@@ -3,27 +3,27 @@ import { FiAlignLeft } from "react-icons/fi";
 export const routes = [
     {
         title: "Home",
-        href: "#",
+        href: "#home",
         Icon: FiAlignLeft,
     },
     {
         title: "About",
-        href: "#",
+        href: "#about",
         Icon: FiAlignLeft,
     },
     {
         title: "Experience",
-        href: "#",
+        href: "#experience",
         Icon: FiAlignLeft,
     },
     {
         title: "Education",
-        href: "#",
+        href: "#education",
         Icon: FiAlignLeft,
     },
     {
         title: "Contact",
-        href: "#",
+        href: "#contact",
         Icon: FiAlignLeft,
     },
 ];

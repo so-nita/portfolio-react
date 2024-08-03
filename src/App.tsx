@@ -24,9 +24,11 @@ function App() {
 
   return (
     <div className="main-container">
-      <Header />
+      {!finishedLoading && <Startup />}
+      { finishedLoading && (
+        <Header />
+      )}
       <main className="lg:pt-32 md:pt-24 pt-20 h-dvh">
-        {!finishedLoading && <Startup />}
         {finishedLoading && (
           <>
             <Transition />
