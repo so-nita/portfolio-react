@@ -52,7 +52,7 @@ const technologies = [
                         learning drives me to make a positive impact and advance technology.
                     </span>
                     </div>
-            
+                    
                     <div className="font-Header tracking-wide">
                     <span className="text-gray-400  ">
                         Here are a few technologies I&apos;ve been working with recently :
