@@ -8,6 +8,8 @@ import AOS from 'aos';
 import AboutMe from "./components/about/about";
 import Transition from './components/transition';
 import Experience from './components/experience/experience';
+// import Hero from './test/Hero';
+// import { ScrollProvider } from './test/Providers/ScrollProvider';
 
 function App() {
   const [finishedLoading, setFinishedLoading] = useState(false);
@@ -44,6 +46,15 @@ function App() {
     </div>
   );
 }
+
+// function App() {
+//   return (
+//     <ScrollProvider>
+//       <Hero />
+//     </ScrollProvider>
+//   );
+// };
+
 
 export default App;
 

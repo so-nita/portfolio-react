@@ -24,7 +24,7 @@ const NavMobile = () => {
                     >
                         <ul className="grid gap-2">
                             {routes.map((route, idx) => {
-                                const { Icon } = route;
+                                //const { Icon } = route;
                                 return (
                                     <motion.li
                                         key={idx} // Added key prop

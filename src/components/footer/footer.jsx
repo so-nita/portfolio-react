@@ -47,7 +47,7 @@ export default function Fotter(props) {
             
                         <span className="text-xs flex flex-row items-center space-x-2 group-hover:text-AAsecondary cursor-pointer">
                             <FontAwesomeIcon icon={FiGithub} className="w-4 h-4 text-gray-400 fill-current group-hover:text-AAsecondary" />
-                            <span className="">Source code - Github</span>
+                            <span className="cursor-pointer">©Source code - Github</span>
                         </span>
                     </div>
                 </a>
