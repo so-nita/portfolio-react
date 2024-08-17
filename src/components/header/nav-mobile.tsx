@@ -41,13 +41,6 @@ const NavMobile = () => {
                                                 <span className="font-mono">0{idx+1}{"."}</span>
                                                 <span className="text-AAsecondary">{"< "}</span>{route.title}<span className="text-AAsecondary ml-2">{" />"}</span>
                                             </span>
-                                            {/* <span className="flex items-center gap-2 text-lg">
-                                                <FontAwesomeIcon className="text-AAsecondary" size="sm" icon={faAngleLeft} />
-                                                <span className="flex items-center gap-x-0">
-                                                    {route.title}
-                                                </span>
-                                                <FontAwesomeIcon className="text-AAsecondary" size="sm" icon={faAngleRight} />
-                                            </span> */}
                                         </a>
                                     </motion.li>
                                 );
